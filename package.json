@@ -1,0 +1,11 @@
+{
+  "name": "blog_api",
+  "version": "1.0.0",
+  "description": "this an api the enales users to create and comment on posts, created using node/express js.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mihndim julius",
+  "license": "ISC"
+}
