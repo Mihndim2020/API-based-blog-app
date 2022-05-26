@@ -6,10 +6,13 @@ const bodyParser = require('body-parser');
 const app = express();
 
 app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
+const message = {content: "My name is Mih_coder"};
+
 app.get('/', (req, res) => {
-    res.json({message: 'This is CORS-enabled for all origins! '});
+    res.json(message);
 })
 
 app.post('/', (req, res) => {
