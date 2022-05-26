@@ -10,6 +10,10 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
+mongoose.connect(process.env.mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
 const message = {content: "My name is Mih_coder"};
 
 app.get('/', (req, res) => {
