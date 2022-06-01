@@ -1,5 +1,10 @@
 const Post = require('../models/post.js');
 
+// Display the the index page
+exports.post_index = function(req, res) {
+    res.send('The index page is not implemented yet');
+};
+
 // Display the list of all posts
 exports.post_list = function(req, res) {
     res.send('Not implemented yet');
