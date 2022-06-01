@@ -16,3 +16,23 @@ router.get('/author/create', author_controller.author_create_post);
 router.get('/', post_controller.post_index);
 
 // GET request for creating post, this must come before the route that displays a Post (uses id).
+router.get('/post/create', post_controller.post_create_get);
+router.post('/post/create', post_controller.post_create_post);
+
+router.get('/post/:id/update', post_controller.post_update_get);
+router.post('/post/:id/update', post_controller.post_update_post);
+
+router.get('/post/:id/delete', post_controller.post_delete_get);
+router.post('/post/:id/delete', post_controller.post_delete_post);
+
+router.post('/post/:id/publish', post_controller.post_publish_post);
+
+router.post('/post/publish', post_controller.post_publish_post);
+
+router.get('/posts', post_controller.post_list);
+
+router.get('/post/:id', post_controller.post_detail);
+
+module.exports = router;
+
+
