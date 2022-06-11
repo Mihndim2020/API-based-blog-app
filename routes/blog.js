@@ -10,6 +10,12 @@ const post_controller = require('../controllers/postController');
 // GET request for creating an author, this must come before routes that display Author (uses id).
 router.post('/author/create', cors(), author_controller.author_create_post);
 
+// LOGIN ROUTES
+
+router.post('/login', (req, res, next) => {
+
+});
+
 // POST ROUTES 
 
 // GET blog home page.

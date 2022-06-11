@@ -22,7 +22,7 @@ exports.post_create_get = function(req, res) {
 
 // Handle Post create on POST.
 exports.post_create_post = function(req, res) {
-    res.send('NOT IMPLEMENTED: Post create POST');
+    res.send('NOT IMPLEMENTED: Post create POST is not yet implemented by Jay coder');
 };
 
 // Display Post delete form on GET.
