@@ -20,13 +20,9 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 // const message = {content: "My name is Mih_coder"};
 
-app.get('/', (req, res) => {
+app.get('/', cors(), (req, res) => {
     res.redirect('/blog');
 })
-
-// app.post('/', (req, res) => {
-//     res.json(req.body);
-// });
 
 app.listen(process.env.port, () => {
     console.log(`The app is listening on port ${process.env.port}`);
