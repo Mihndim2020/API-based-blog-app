@@ -1,4 +1,5 @@
 const {body, validationResult} = require('express-validator');
+const passport = require("passport");
 const Author = require('../models/author.js');
 
 // Handle Author create on post
@@ -37,3 +38,11 @@ exports.author_create_post = [
 
     }
 ];
+
+exports.author_login = function(req, res) {
+
+    passport.authenticate("local", {
+        successRedirect: "/",
+        failureRedirect: "/"
+      });
+};
