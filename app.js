@@ -57,7 +57,15 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 app.get('/', cors(), (req, res) => {
     res.redirect('/blog');
-})
+});
+
+app.post(
+    "/login",
+    passport.authenticate("local", {
+      successRedirect: "/",
+      failureRedirect: "/"
+    })
+  );
 
 app.listen(process.env.port, () => {
     console.log(`The app is listening on port ${process.env.port}`);

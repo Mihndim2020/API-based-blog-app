@@ -12,7 +12,7 @@ router.post('/author/create', cors(), author_controller.author_create_post);
 
 // LOGIN ROUTES
 
-router.post('/login', author_controller.author_login);
+// router.post('/login', author_controller.author_login);
 
 // POST ROUTES 
 

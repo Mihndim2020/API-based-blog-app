@@ -39,10 +39,10 @@ exports.author_create_post = [
     }
 ];
 
-exports.author_login = function(req, res) {
+// exports.author_login = function(req, res) {
 
-    passport.authenticate("local", {
-        successRedirect: "/",
-        failureRedirect: "/"
-      });
-};
+//     passport.authenticate("local", {
+//         successRedirect: "/",
+//         failureRedirect: "/"
+//       });
+// };
