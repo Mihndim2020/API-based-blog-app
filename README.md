@@ -1,11 +1,9 @@
-# API-based-blog-app
-This is an API based blog app that allows users to create, update, publish and comment on posts. This built using node/express a JavaScript framework. 
+
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# API-based-blog-app
 
-> Description the project.
-
+This is an API based blog app that allows users to create, update, publish and comment on posts. This built using node/express a JavaScript framework. 
 
 ## Built With
 
